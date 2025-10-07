@@ -1,16 +1,15 @@
-
+let locationX = 0;
 
 function setup() {
   createCanvas(500, 500);
-  background(220);
-  let x = 0;
+  //background(220);
 }
 
 function draw() {
   //01 what happens if background is in the setup 
   //   also, using mouse x/y values as the variables. 
   //   to move, objects in the canvas. 
-  //background(220);
+  background(220);
   //rect(mouseX,mouseY,40,40);
   //ellipse(mouseX,mouseY,100,50);
 
@@ -42,9 +41,34 @@ function draw() {
   //ellipseMode("center");
   //ellipse(250,250,sin(frameCount/100)*500,sin(frameCount/100)*500);
 
-  ellipse(x ,100,100,50);
+  //movement of ellipse in the x direction using a custom variable 
+  //if circle is beyond the frame, it starts back from zero. 
+
+  //ellipse(locationX+50,100,100,100);
+  //locationX=locationX+1;
+  //if (locationX > 500) {
+ // locationX=0;
+//} else {
+  //locationX=locationX+5;
+
+  //making my own functions, that i can call in my code. 
+  //drawRocket(200,100);
+
+
+}
+
+
+//making my own functions, that i can call in my code. 
+//function drawRocket(x,y){
+//    rectMode(CENTER)
+//  rect(200,200,20,100)
+//  circle(200,150,20)
+//}
+
+
+
 
 
   
 
-}
+
