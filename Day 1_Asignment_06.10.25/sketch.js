@@ -129,7 +129,7 @@ function draw() {
   line(262,84,268,130)
 
     //lover 2 point 
-  strokeWeight(10)
+  strokeWeight(5)
   point(475,495)
 
   //lover2 curves
