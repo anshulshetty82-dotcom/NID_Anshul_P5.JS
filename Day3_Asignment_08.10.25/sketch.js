@@ -5,7 +5,7 @@ const proximityRadius = 50;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background("#b9e2e9ff");
-  frameRate(2);
+  frameRate(30);
 }
 
 function draw() {
