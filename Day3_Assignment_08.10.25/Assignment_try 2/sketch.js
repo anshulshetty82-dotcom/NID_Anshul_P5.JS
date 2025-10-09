@@ -3,10 +3,12 @@ let size = 10;
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background("#ff0000ff");
-  frameRate(30); 
+  frameRate(20); 
+  noCursor();
 }
 
 function draw() {
+  //background("#ff0000ff");
   let halfSize = size / 2;
   const PROXIMITY_RADIUS = 80 ; 
 
@@ -38,7 +40,7 @@ function draw() {
         } else {
             // B. NORMAL STATE (Mouse is far)
             // Use the original semi-transparent fill color
-            fill("#ffc10734"); // Semi-transparent blue
+            fill("#efef1728"); // Semi-transparent blue
         }
         
         // Draw the inner circle
