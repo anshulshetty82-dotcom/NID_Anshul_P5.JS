@@ -1,3 +1,0 @@
-Admin
-DESKTOP-BNVHKC5 
-09 October 2025  09:28:20
