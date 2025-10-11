@@ -1,4 +1,4 @@
-let size = 100;
+let size = 200;
 let myPattern=[];
 let noImages=4;
 

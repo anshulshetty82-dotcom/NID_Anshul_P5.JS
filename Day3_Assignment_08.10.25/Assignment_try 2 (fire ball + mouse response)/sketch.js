@@ -1,16 +1,16 @@
-let size = 10;
+let size = 20;
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background("#ff0000ff");
-  frameRate(20); 
+  frameRate(50); 
   noCursor();
 }
 
 function draw() {
   //background("#ff0000ff");
   let halfSize = size / 2;
-  const PROXIMITY_RADIUS = 80 ; 
+  const PROXIMITY_RADIUS = 100 ; 
 
   for (let j = 0; j < height; j = j + size) {
     for (let i = 0; i < width; i = i + size) {

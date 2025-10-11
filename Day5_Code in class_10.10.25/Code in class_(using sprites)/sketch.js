@@ -1,34 +1,42 @@
+let sprite, sX, sY, sW, sH;
+let count = 0;
+let sArray = [];
+function preload() {
+  sX = 8;
+  sY = 4;
 
-let sRow=3;
-let sCols=3;
-let spriteImage;
-let sprite = [];
+  sprite = loadImage("images/0.png");
 
-function preload(){
-  spriteImage = loadImage("images/0.jpg");
 }
 
 function setup() {
-   let sWidth = spriteImage.height/sRow;
-   let sHeight = spriteImage.width/sCols;
-
-
   createCanvas(windowWidth, windowHeight);
-  for(let h=0; h<sRow; h=h+1){
-    for(let w=0; w<sCols; w=w+1){
-    sprite[sprite.length]=spriteImage.get(w*width,h*height,sWidth,sHeight);
+  sW = sprite.width / sX;
+  sH = sprite.height / sY;
+  console.log(sprite);
+  noCursor();
+  for (let i = 0; i < sY; i++) {
+    for (let j = 0; j < sX; j++) {
+      sArray[i * sX + j] = sprite.get(j * sW, i * sH, sW, sH);
     }
 
-    frameRate(2);
   }
-  // loop through the sprite and store it in 1D sprite 
+  console.log(sArray)
 }
 
 function draw() {
-  background(220);
-  let imagepick = frameCount%sprite.length;
-  image(sprite[imagepick],0,0,100,100);
+  background(0);
+  if (mouseIsPressed) {
+    count++;
+    if (count >= sX * sY) {
+      count = 0;
+    }
+    image(sArray[count], mouseX-sW/2, mouseY/2);
+  }
+
 }
+
+
 
 
 
