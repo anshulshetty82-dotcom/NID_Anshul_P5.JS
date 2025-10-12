@@ -38,30 +38,10 @@ function setup() {
 }
 
 function draw() {
-  background(255);
+  background("#ffffffff");
   fill("black")
   noStroke();
   rect(0,innerHeight/1.482,width,innerHeight);
-  // noStroke();
-
-  // fill(167, 199, 231,50);
-  // triangle(300, 300, 0, 512, 1000,700);
-
-  // fill(167, 199, 231,50);
-  // triangle(300, 300, 230, 350, 388,350);
-
-  // fill('red');
-  // ellipse(1300, 150, 250,250);
-
-  // fill(50, 100, 255);
-  // triangle(1000, 50, 300, 512, 1900,512);
-
-  // fill(167, 199, 231,60);
-  // triangle(1000, 50, 800, 182, 1257,182);
-  
-  // fill(14, 14, 14);
-  // rect(0, 512, innerWidth, 300);
-
   image(sprites[row][count], x, height/2,200,200);
   if (frameCount % 5 == 0) {
     count = (count + 1) % spriteX;
