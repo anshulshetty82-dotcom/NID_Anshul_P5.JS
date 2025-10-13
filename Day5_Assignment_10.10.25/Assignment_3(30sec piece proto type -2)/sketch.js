@@ -271,9 +271,9 @@ const GROUND_Y_POS_RATIO = 1.2;
 // ⭐️ PRELOAD: Load all images (Backgrounds and Sprite Sheet)
 function preload() {
     // Background images
-    bg_level1 = loadImage("Images/g0.jpg");
-    bg_level1_5 = loadImage("Images/g1.png");
-    bg_level2 = loadImage("Images/g2.jpg");
+    bg_level1 = loadImage("Images/g1.png");
+    bg_level1_5 = loadImage("Images/g2.png");
+    bg_level2 = loadImage("Images/g2.png");
     bg_level3 = loadImage("Images/g3.png");
     
     // Load the END_LEVEL background
@@ -366,9 +366,9 @@ function drawLevelScreen() {
     image(ALL_BACKGROUNDS[currentLevel], 0, 0, width, height);
 
     // 2. Draw the ground plane
-    fill("black");
-    const groundLine = height / GROUND_Y_POS_RATIO;
-    rect(0, groundLine, width, height); 
+                // fill("black");
+                // const groundLine = height / GROUND_Y_POS_RATIO;
+                // rect(0, groundLine, width, height); 
 
     // 3. Handle Input & Movement
     handleMovement();
@@ -389,23 +389,23 @@ function drawLevelScreen() {
 
     // ⭐️ NEW: LOCAL TEXT PROMPT DEFINITION AND DRAWING
 
-    let promptText = "No prompt available for this level.";
+    let promptText = "";
 
     // Define the prompt text based on the current level
-    switch(currentLevel) {
-        case 1:
-            promptText = "Level 1: Choose your path wisely. The decision is permanent.";
-            break;
-        case 1.5:
-            promptText = "Level 1.5: The path splits here. Commit and proceed.";
-            break;
-        case 2:
-            promptText = "Level 2: The air grows thin. You must continue forward.";
-            break;
-        case 3:
-            promptText = "Level 3: The final gate. Victory or failure is just ahead.";
-            break;
-    }
+    // switch(currentLevel) {
+    //     case 1:
+    //         promptText = "Level 1: Choose your path wisely. The decision is permanent.";
+    //         break;
+    //     case 1.5:
+    //         promptText = "Level 1.5: The path splits here. Commit and proceed.";
+    //         break;
+    //     case 2:
+    //         promptText = "Level 2: The air grows thin. You must continue forward.";
+    //         break;
+    //     case 3:
+    //         promptText = "Level 3: The final gate. Victory or failure is just ahead.";
+    //         break;
+    // }
 
     const textBoxWidth = 600;
     const textBoxHeight = 80;
@@ -413,8 +413,8 @@ function drawLevelScreen() {
     const centerY = height / 5; 
 
     // Draw semi-transparent background box
-    fill(0, 0, 0, 150); // Black with 150/255 opacity
-    rect(centerX - textBoxWidth / 2, centerY - textBoxHeight / 2, textBoxWidth, textBoxHeight, 10); // 10px rounded corners
+    // fill(0, 0, 0, 150); // Black with 150/255 opacity
+    // rect(centerX - textBoxWidth / 3, centerY - textBoxHeight / 3, textBoxWidth, textBoxHeight, 10); // 10px rounded corners
 
     // Draw text
     textAlign(CENTER, CENTER);
