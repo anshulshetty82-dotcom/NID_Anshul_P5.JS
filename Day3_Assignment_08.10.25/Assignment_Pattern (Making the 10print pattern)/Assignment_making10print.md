@@ -13,6 +13,6 @@ Regarding the construction of the pattern. on each piece of tile 4 points have b
 # _learnings
 
 
-I feel like the outcome didn't come out to be how i imagined it. The 10print generated with the pattern looked very greedy contrary to how I perceived the pattern to be.
+I feel like the outcome didn't come out to be how i imagined it. The 10print generated with the pattern looked very structured contrary to how I perceived the pattern to be.
 
 

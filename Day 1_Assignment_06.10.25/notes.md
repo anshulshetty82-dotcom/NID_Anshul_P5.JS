@@ -15,6 +15,6 @@ But society is not too forgiving, it's conditioned to suppress the nature of lov
 ## _In the lense of the_ **code**.
 
 The composition mainly consits majorly of Arcs, lines, rectangles and bezier curves.
-I found a neat trick to help connect the curves and lines, since the program runs on a co-ordinate system it was hard to calculate the coordinates of each pixle and replicate my organic sketch.
+I found a neat trick to help connect the curves and lines, since the program runs on a co-ordinate system it was hard to calculate the coordinates of each pixel and replicate my organic sketch.
 
 >**text (mouseX(/ and mouse Y),x,y)**, in draw helped with the problem. now I can hover my mouse on any pixel on the canvas to reference its coordinates and adjust my curves and bezier accordingly as per my sketch. 

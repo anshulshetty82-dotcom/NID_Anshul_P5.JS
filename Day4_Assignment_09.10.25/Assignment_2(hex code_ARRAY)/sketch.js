@@ -1,5 +1,5 @@
 let size = 100;
-let hexnumber=["#d9e9eeff","#9dbeeaff]","#6674b4ff","#6db1d3ff","#0e629aff","#659cc7ff","#f8f083ff","#aee99aff","#c77f65ff"]
+let hexnumber=["#3C7DA6","#5095BF]","#D9C6B0","#BFA68F","#593E2E"]
 
 
 function setup() {
