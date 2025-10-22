@@ -7,3 +7,5 @@ I tried to capture the emotions of love to disgust through the color transitions
 
 ![bg](A2.png)
 ![bg](A3.png)
+
+link to day 2 assingment,

@@ -22,8 +22,6 @@
   
 //}
 
-
-
 let rotationAngle = 0;   
 let smoothX, smoothY;    
 
