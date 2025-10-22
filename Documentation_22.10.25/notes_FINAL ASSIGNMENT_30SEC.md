@@ -32,12 +32,15 @@ I have used the map function to slowly fade in the text as my player progresses 
 > I used AI on the following things,
 > - into screen to level 1 - sound play back loop.
 > - Adding a poem in my end screen was also quite tricky. though in hind sight I think the Ai over complicated the process.
-> - understanding logical NOT operators - was very hany when it came to sound. 
+> - understanding logical NOT operators - was very handy when it came to sound. 
 
 > Things i messed up in the code,
 > - I ended up hard coding the player y, and npc y along with the Image sizes - as per by window width and height/ in my chrome browser. Which ended up being a big mistake.
 
 ^^ I will have to fix this mistake in my future build. 
+
+link to final assignment assignment,
+> https://anshulshetty82-dotcom.github.io/NID_Anshul_P5.JS/Day5_Assignment_10.10.25/Assignment_1%20(new%2010%20print%20pattern)/
 
 
 
