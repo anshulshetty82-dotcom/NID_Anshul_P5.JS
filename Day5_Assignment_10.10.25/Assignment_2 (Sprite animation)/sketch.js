@@ -41,7 +41,7 @@ function draw() {
   background("#ffffffff");
   fill("black")
   noStroke();
-  rect(0,innerHeight/1.482,width,innerHeight);
+  rect(0,innerHeight/1.4,width,innerHeight);
   image(sprites[row][count], x, height/2,200,200);
   if (frameCount % 5 == 0) {
     count = (count + 1) % spriteX;
