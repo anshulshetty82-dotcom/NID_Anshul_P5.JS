@@ -529,7 +529,7 @@ function textOnscreenLevelsix(){
     textAlign(CENTER);
     fill(0,0,0,tr);
     textSize(35);
-    text("Thankyou for playing :D, please take a mo", width/2,height-70);
+    text("Thankyou for playing :D", width/2,height-70);
   }
 
     if (x > width/2 && x < width){
