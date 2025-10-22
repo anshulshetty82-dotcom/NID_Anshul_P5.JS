@@ -1,33 +1,11 @@
-//let lineProgress = 0;
-//let startX, startY, endX, endY;
-//https://medium.com/@cldiegoj/quick-guide-into-creative-coding-with-p5-js-add64d83880f(guide reff)
 
-//function setup() {
-  //createCanvas(500, 500);
-  //startX = 0;
-  //startY = 0;
-  //endX = 500; 
-  //endY = 500;
-//}
-
-//function draw() {
-  //background(220);
-  //let currentX = lerp(startX,endX,lineProgress);
-  //let currentY = lerp(startY,endY,lineProgress);
-  //line(startX,startY,currentX,currentY);
-  //lineProgress = lineProgress +0.03;
-  //if (lineProgress >1){
-    //lineProgress = 0;
-  //}
-  
-//}
 
 let rotationAngle = 0;   
 let smoothX, smoothY;    
 
 function setup() {
   createCanvas(500, 500);
-  // Set the color mode to HSB (Hue, Saturation, Brightness)
+ 
   colorMode(HSB, 360, 100, 100); 
   smoothX = width / 2;
   smoothY = height / 2;
@@ -104,7 +82,7 @@ function draw() {
   bezier(140, 340, 142, 311, 174, 285, 209, 358);
   bezier(209, 358, 218, 386, 253, 377, 271, 348);
   bezier(270, 349, 278, 338, 320, 301, 392, 317);
-  bezier(321, 276, 310, 267, 314, 271, 307, 265);  
+  bezier(321, 276, 310, 267, 314, 271, 307, 265);
   
   //lover line vertical
   stroke(0, 0, 0);
