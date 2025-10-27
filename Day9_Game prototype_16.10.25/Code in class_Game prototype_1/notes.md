@@ -39,6 +39,9 @@ I have used the map function to slowly fade in the text as my player progresses 
 
 ^^ I will have to fix this mistake in my future build. 
 
+link to final assignment assignment,
+> https://anshulshetty82-dotcom.github.io/NID_Anshul_P5.JS/Day5_Assignment_10.10.25/Assignment_1%20(new%2010%20print%20pattern)/
+
 
 
 
