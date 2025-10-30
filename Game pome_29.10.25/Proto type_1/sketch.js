@@ -11,6 +11,9 @@ let currentgamelevel = gameLevel[0];
 //game level switcher 
 let glNo = 0;
 
+//font load 
+let newfont;
+
 //player var x,y and speed in dir 
 playerX = 0,
 playerY = 0; 
@@ -22,6 +25,7 @@ let bgl1;
 let bgl3point1;
 let bgl3point2;
 let bgl4;
+let bgl7;
 
 //world images 
 let bgwl1;
@@ -32,6 +36,8 @@ function preload(){
   bgl3point1 = loadImage("images/4.png");
   bgl3point2 = loadImage("images/5.png");
   bgl4 = loadImage("images/6.png");
+  bgl7 = loadImage("images/7.png");
+  newfont = loadFont("fonts/TheSadTrainRegular-VGd3V.ttf")
 }
 
 
@@ -66,6 +72,8 @@ function draw() {
     levelFive();
   } else if (currentgamelevel == gameLevel[6]){
     levelSix();
+  } else if (currentgamelevel == gameLevel[7]){
+    levelSeven();
   }
 }
 
@@ -80,7 +88,7 @@ function levelOne(){
   fill(255,255,255)
   textAlign(CENTER)
   textSize(50)
-  textFont('The Sad Train')
+  textFont(newfont)
   text("I find myself longing, in search of that night,",width/2,height/2)
   noFill();
 
@@ -277,6 +285,19 @@ function levelSix(){
     textSize(40);
     text("As I got closer the honks grew louder, the ominous stench of sulfur filled the air",  width/2,height/1.18);
   }
+
+}
+
+function levelSeven(){
+
+  
+  let newcalculation = height/1.5+ playerSize;
+  image(bgl7,0,0,width,newcalculation);
+
+  groundPlane();
+  playerSprite();
+  playerMovement();
+
 
 }
 
